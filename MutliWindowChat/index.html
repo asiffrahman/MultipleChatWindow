@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pheonix Chat</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <div id="mainBody">
+    <div class="button">
+      <!--
+      <button type="button" name="gmButton" id="gmB"> GM </button>
+      <button type="button" name="plButton" id="plB"> Player </button>
+    -->
+      <label for="plNumber1">Number of Players</label>
+
+      <select id="plNumber">
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+      </select>
+
+      <label for="userName">Room ID: </label>
+      <input type="text" name="roomIden" id="roomId" value="Enter Room ID">
+      <label for="roomPassowrd">Room Pass: </label>
+      <input type="text" name="roomPW" id="roomPs" value="PASSWORD">
+      <button type="button" name="roomCButton" id="roomC"> Create </button>
+      </div>
+      <div class="button">
+
+
+      <label for="userName">Name: </label>
+      <input type="text" name="userNa" id="userName" value="NoName">
+      <label for="GM"> Game Master</label>
+      <input type="radio" name="PositionR" id="gmR" value="GM">
+      <label for="PL"> Player</label>
+      <input type="radio" name="PositionR" id="plR" value="PL" checked >
+
+      <button type="button" name="startButton" id="startB"> Join</button>
+      <button type="button" name="reloadButton" id="relB"> Reload</button>
+      <button type="button" name="spectateButton" id="spB"> Spectate</button>
+      <label class="diaM" id="diaMes"></label>
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+   <script src="./js/main.js"></script>
+
+
+  </body>
+</html>

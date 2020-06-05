@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <div id="mainBody">
+    <div class="button">
+      <button type="button" name="gmButton" id="gmB"> GM </button>
+      <button type="button" name="plButton" id="plB"> Player </button>
+      <label for="userName">Name: </label>
+      <input type="text" name="userNa" id="userName" value="NoName">
+      <label for="GM"> Game Master</label>
+      <input type="radio" name="PositionR" id="gmR" value="GM">
+      <label for="PL"> Player</label>
+      <input type="radio" name="PositionR" id="plR" value="PL" checked >
+
+      <button type="button" name="startButton" id="startB"> 決定</button>
+
+      <label for="plNumber1">Number of Players</label>
+
+      <select id="plNumber">
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+      </select>
+
+    </div>
+    <div class="your_container" id="user1" style="float:left;">
+
+
+
+           <!-- チャットの外側部分① -->
+           <div id="bms_messages_container">
+
+               <!-- ヘッダー部分② -->
+               <div id="bms_chat_header">
+                   <!--ステータス-->
+                   <div id="bms_chat_user_status">
+                       <!--ステータスアイコン-->
+                       <div id="bms_status_icon">●</div>
+                       <!--ユーザー名-->
+                       <div id="bms_chat_user_name" class="userN">ユーザー</div>
+                   </div>
+               </div>
+
+               <!-- タイムライン部分③ -->
+               <!-- Deleted the original message-->
+               <div id="bms_messages1" class="messagesStyle">
+
+
+               </div>
+
+               <!-- テキストボックス、送信ボタン④ -->
+               <div id="bms_send">
+                   <textarea id="bms_send_message1" class="bms_send_messageF"></textarea>
+                   <div id="bms_send_btn">
+                       <button type="button" name="sendButton" id="sendB1"> 送信 </button>
+                  </div>
+                  </div>
+           </div>
+
+       </div>
+       <div class="your_container" id="user2" style="float:left;">
+
+              <!-- チャットの外側部分① -->
+              <div id="bms_messages_container">
+                  <!-- ヘッダー部分② -->
+                  <div id="bms_chat_header">
+                      <!--ステータス-->
+                      <div id="bms_chat_user_status">
+                          <!--ステータスアイコン-->
+                          <div id="bms_status_icon">●</div>
+                          <!--ユーザー名-->
+                          <div id="bms_chat_user_name" class="userN">ユーザー</div>
+                      </div>
+                  </div>
+
+                  <!-- タイムライン部分③ -->
+                  <!-- Deleted the original message-->
+                  <div id="bms_messages2" class="messagesStyle">
+
+
+                  </div>
+
+                  <!-- テキストボックス、送信ボタン④ -->
+                  <div id="bms_send">
+                      <textarea id="bms_send_message2" class="bms_send_messageF"></textarea>
+                      <div id="bms_send_btn">
+                          <button type="button" name="sendButton" id="sendB2"> 送信 </button>
+                     </div>
+                     </div>
+              </div>
+          </div>
+          <div class="your_container" id="user3" style="float:left;">
+
+                 <!-- チャットの外側部分① -->
+                 <div id="bms_messages_container">
+                     <!-- ヘッダー部分② -->
+                     <div id="bms_chat_header">
+                         <!--ステータス-->
+                         <div id="bms_chat_user_status">
+                             <!--ステータスアイコン-->
+                             <div id="bms_status_icon">●</div>
+                             <!--ユーザー名-->
+                             <div id="bms_chat_user_name" class="userN">ユーザー</div>
+                         </div>
+                     </div>
+
+                     <!-- タイムライン部分③ -->
+                     <!-- Deleted the original message-->
+                     <div id="bms_messages3" class="messagesStyle">
+
+
+                     </div>
+
+                     <!-- テキストボックス、送信ボタン④ -->
+                     <div id="bms_send">
+                         <textarea id="bms_send_message3" class="bms_send_messageF"></textarea>
+                         <div id="bms_send_btn">
+                             <button type="button" name="sendButton" id="sendB3"> 送信 </button>
+                        </div>
+                        </div>
+                 </div>
+             </div>
+
+
+
+  </div>
+   <script src="./js/main.js"></script>
+
+
+  </body>
+</html>
